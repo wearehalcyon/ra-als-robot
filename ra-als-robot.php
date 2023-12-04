@@ -4,7 +4,7 @@ Plugin Name: ALS Robot
 Plugin URI: 
 Description: This plugin provide autologin with ALS Workbanch system.
 Author: Roman A
-Version: 0.0.1
+Version: 0.0.3
 Author URI: mailto:thewitness45@gmail.com
 */
 
