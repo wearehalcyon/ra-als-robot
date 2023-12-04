@@ -4,7 +4,7 @@ Plugin Name: ALS Robot
 Plugin URI: 
 Description: This plugin provide autologin with ALS Workbanch system.
 Author: Roman A
-Version: 0.0.3
+Version: 0.0.4
 Author URI: mailto:thewitness45@gmail.com
 */
 
@@ -43,6 +43,9 @@ function ra_als_create_new_administrator() {
 // Processing the autologin request
 add_action('wp_loaded', 'ra_als_autologin_request', 1);
 function ra_als_autologin_request(){
+    if (!isset($_GET['als'])) {
+        return false;
+    }
     if ( $_GET['als'] == 'autologin' ) {
         global $wpdb;
 
